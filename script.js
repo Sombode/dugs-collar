@@ -10,11 +10,11 @@ const modes = {
 };
 
 const lines = [
-  new Audio("/voicelines/HITHERE.wav"),
-  new Audio("/voicelines/YES.wav"),
-  new Audio("/voicelines/COLLAR.wav"),
-  new Audio("/voicelines/NAME.wav"),
-  new Audio("/voicelines/SQUIRREL.wav")
+  new Audio("/voicelines/dugs-collar/HITHERE.wav"),
+  new Audio("/voicelines/dugs-collar/YES.wav"),
+  new Audio("/voicelines/dugs-collar/COLLAR.wav"),
+  new Audio("/voicelines/dugs-collar/NAME.wav"),
+  new Audio("/voicelines/dugs-collar/SQUIRREL.wav")
 ];
 
 let unloadedLinesLeft = lines.length;

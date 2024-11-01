@@ -1,0 +1,70 @@
+body {
+  background-color: #1c1c1c;
+}
+
+#indicator {
+  display: none;
+  width: 400px;
+  height: 400px;
+  background-color: #94c8ff;
+  border-radius: 50%;
+  animation: blink-animation 2s steps(5, start) infinite;
+  -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+
+#controls {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.audioButton {
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  color: white;
+  margin: 5px;
+  padding: 10px 40px;
+}
+
+.audioButton:active {
+  border: solid 2px #ff4242;
+  color: #ff4242;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #ff4242;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 6px;
+}
+
+.unloaded {
+  background-color: #ff94e2 !important;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
